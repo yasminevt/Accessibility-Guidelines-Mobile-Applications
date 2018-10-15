@@ -1,8 +1,580 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
 <body>
-<b> This is a comprehensive list of accessibility guidelines for mobile applications. </b>
+<b> This is a comprehensive list of accessibility guidelines for mobile applications: </b>
 
+<table>
+  <tr>
+    <th>Accessibility Guideline</th>
+    <th>Main Beneficiary</th>
+    
+  </tr>
+  <tr>
+    <td>Do not need to scroll to see navigation menu</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+  <tr>
+    <td>Link text does not go beyond viewport width</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+  <tr>
+    <td>Form fields are below (not beside) labels</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+  <tr>
+    <td>Images have an alternate text description</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+  <tr>
+    <td>UI elements (buttons, divs, etc) have descriptive labeling</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+  
+  <tr>
+    <td>Prerecorded videos have captions </td>
+    <td> Deaf</td>
+    
+  </tr>
+
+  <tr>
+    <td>Videos have either text transcript or audio description </td>
+    <td>Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Live videos have captions</td>
+    <td> Deaf</td>
+    
+  </tr>
+
+  <tr>
+    <td> Prerecorded videos have audio description</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Prerecorded audio content has sign language interpretation </td>
+    <td> Deaf</td>
+    
+  </tr>
+
+  <tr>
+    <td>Videos have extended audio description that gives the narrator adequate time to describe what is happening in the video</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+   <tr>
+    <td> Videos have a full text transcript and audio description that is linked to from the original content </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Live Audio has text transcript (either real-time closed captioning or a prepared script that is linked to from the Audio content</td>
+    <td> Deaf </td>
+    
+  </tr>
+
+  <tr>
+    <td>Uses more than one sensory characteristic for instructions </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>User is notified of state changes</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>On-screen way to manipulate volume control for audio content </td>
+    <td> Mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td>On-page controls for changing text size </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+   <tr>
+    <td> Uses clear, sensible fonts</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Information conveyed by color must also be available by other means</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Text is a reasonable default size (14pt)</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Audio is not played automatically for more than 3 seconds, users are able to pause or prevent audio </td>
+    <td> Deaf</td>
+    
+  </tr>
+
+  <tr>
+    <td> Normal-size (<18pt / 14pt bold) text: Contrast ratio of 4.5:1 </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Large text ( >18pt / 14pt bold): Contrast ratio of 3:1 </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+   <tr>
+    <td>Text can be resized to 200&#37;</td>
+    <td>Visually impaired </td>
+    
+  </tr>
+
+  <tr>
+    <td> Content resizes and reflows for the magnified viewport size</td>
+    <td>Visually impaired </td>
+    
+  </tr>
+
+  <tr>
+    <td> Images of text are not used</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Contrast ratio between background and text is at least 7:1</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Low or no background audio. Background audio can be turned off or must be 20 decibels lower (~4 times quieter) than foreground </td>
+    <td> Deaf</td>
+    
+  </tr>
+
+  <tr>
+    <td>Users are offered a range of presentation options. Users can select from foreground and background colors </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+   <tr>
+    <td>Width is no more than 80 characters or glyphs (40 if CJK) </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Text is not justified (aligned to both the left and the right margins) </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.  </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Touch targets are 9mm high and 9 mm wide</td>
+    <td> Visually impaired, mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td>Touch targets close to minimum size are surrounded by inactive space  </td>
+    <td> Visually impaired, mobile impairment</td>
+    
+  </tr>
+
+   <tr>
+    <td>Gestures can be replaced by focusing and activating elements </td>
+    <td>Visually impaired, mobile impairment </td>
+    
+  </tr>
+
+  <tr>
+    <td>Two-finger gestures can be replaced with a single stylus or by focusing and activating elements </td>
+    <td> Visually impaired, mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td>Events are triggered only when touchend event is fired </td>
+    <td> Visually impaired, mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td>Device manipulation (shaking, tilting) can be replaced by touch / keyboard options </td>
+    <td> Visually impaired, mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td> Does not require extensive thumb range of motion</td>
+    <td> Visually impaired, mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td> Natural and comfortable left-handed use</td>
+    <td> </td>
+    
+  </tr>
+
+   <tr>
+    <td>An external keyboard is able to be used to navigate the site </td>
+    <td> Mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td> User is able to move focus between all elements using only the external keyboard</td>
+    <td> Mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td> All functionality can be accessed through the external keyboard</td>
+    <td> Mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td> Users are able to turn off, adjust, or extend the time limit for actions or displaying content</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Moving, blinking, scrolling content has an option to stop the motion</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Users are able to delay frequency of auto-updating content</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+   <tr>
+    <td> No time limits or time-controlled content</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Does not use an automatic refresh or redirect that interrupts users’ focus</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> User data is maintained when the user is asked to reauthenticate (shopping cart content, form / survey answers, etc)</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>Link does not violate general flash threshold</td>
+    <td> Cognitive impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td> Content does not flash more than 3 times in any 1 second period</td>
+    <td> Cognitive impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td> Discernable home button</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+   <tr>
+    <td>Screen has title that describes the purpose </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Elements are focused in an understandable and meaningful order</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Purpose of links / buttons can be determined from link / button text and context </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Screen has multiple ways to reach it (search function, sitemap, navigation menu)</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>Headings and labels describe topic / purpose </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Focus/currently selected element is clearly visible</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+   <tr>
+    <td> App uses breadcrumbs to aid in navigation and displays where the user is within the app</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Link / button purpose can be determined from link / button text only</td>
+    <td> </td>
+    
+  </tr>
+
+  <tr>
+    <td> Content is broken up by headings</td>
+    <td>Everyone </td>
+    
+  </tr>
+
+  <tr>
+    <td>Screen reader is able to detect change in orientation</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Both landscape and portrait orientation are supported </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>Important information can be viewed without scrolling </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+   <tr>
+    <td>Default language of screen can be programmatically determined </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Use of jargon / technical terms is minimal and is explained when it is used </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Abbreviations are explained / defined</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>Content is at an 8th grade reading level </td>
+    <td>Everyone </td>
+    
+  </tr>
+
+  <tr>
+    <td> Words that are difficult to pronounce have links to a pronunciation guide</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Context of focus does not change when an element is focused</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+ <tr>
+    <td> Forms do not automatically submit when all fields are filled</td>
+    <td>Everyone </td>
+    
+  </tr>
+
+  <tr>
+    <td> Content at the top of the page is consistent across the app</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>Elements that trigger changes (buttons, links, etc) are clearly indicated </td>
+    <td>Visually impaired </td>
+    
+  </tr>
+
+  <tr>
+    <td> Items that perform the same action are contained in the same element</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td> Elements use conventional positioning (upper left for back, menus are left-aligned, etc)</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Elements are not changed until users request a change</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+   <tr>
+    <td> Identify and explain any errors that can be automatically detected</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Save correct information and allow user to correct the error and continue</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Labels or instructions are provided when content requires input</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td> Instructions for how to use gestures are readily available</td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>Error suggestion for formatted input shows the correct format </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>Legal, financial, changes to user controlled data are checked for input errors and the user is asked to confirm or these changes are made reversible </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+   <tr>
+    <td>Onscreen indiactor for how to use gestures </td>
+    <td> Everyone</td>
+    
+  </tr>
+
+  <tr>
+    <td>Context-sensitive help is given to users </td>
+    <td>Everyone </td>
+    
+  </tr>
+
+  <tr>
+    <td> Content is ordered so that screen reader reads it in an order that makes sense</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>The amount of text entry is reduced thorough the use of select menus, radio buttons, checkboxes, etc </td>
+    <td> Mobile impairment</td>
+    
+  </tr>
+
+  <tr>
+    <td> Application complies with OS-level changes to font</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>Application complies with OS-level changes to text color </td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+   <tr>
+    <td> Information is exposed in a standard and expected way that screen reader can recognize and interact with</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+  <tr>
+    <td>All text elements are visible to screen reader</td>
+    <td> Visually impaired</td>
+    
+  </tr>
+
+</table>
+
+ 
+
+</ol> 
 </body>
 </html>
